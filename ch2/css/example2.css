@@ -1,0 +1,70 @@
+body {
+    background-color: lightgray;
+}
+
+p, li {
+    color: red;
+}
+
+.aueb-logo {
+    border: 2px solid green;
+    width: 400px;
+}
+
+img.aueb-logo {
+    height: auto;
+}
+
+p.aueb-logo {
+    color: blue;
+}
+
+ul > li {
+color: blue;
+}
+
+/* Μόνο την πρώτη p */
+h1 + p {
+    color: orange;
+}
+
+/* Always Order: link -> visisted -> hover -> focus -> active */
+.link-cf {
+    text-decoration: none;
+    color: black;
+}
+
+.link-cf:visited{
+    color: brown;
+}
+
+.link-cf:hover {
+    background-color: green;
+}
+
+.link-cf:focus {
+    outline: none;
+    background-color: yellow;
+}
+
+.link-cf:active {
+    background-color: chocolate;
+}
+
+/* For ID */
+
+#auebLogo {
+    color: lightskyblue;
+}
+
+.border-green-1 {
+    border: 1px solid green;
+}
+
+.border-green-2 {
+    border: 2px solid green;
+}
+
+.text-blue {
+    color: blue;
+}

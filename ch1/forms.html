@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>My First Form</h2>
+    <form>
+        <div>
+            <!-- label== id -->
+            <input type="radio" name="gender" value="male" id="fldMale" checked>
+            <label for="fldMale">Άνδρας</label>
+            <br>
+            <input type="radio" name="gender" value="female" id="fldFemale">
+            <label for="fldFemale">Γυναίκα</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="vehicle1" value="bike" id="fldBike">
+            <label for="fldBike"> Ποδήλατο </label>
+            <br>
+            <input type="checkbox" name="vehicle2" value="motorcylce" id="fldMotorcycle">
+            <label for="fldMotorcycle">Μοτοσυκλέτα </label>
+            <br>
+            <input type="checkbox" name="vehicle3" value="car" id="fldCar">
+            <label for="fldCar">Αυτοκίνητο</label>
+        </div>
+
+        <div>
+            <label for="fldNationality">Υπηκοότητα</label>
+            <select name="nationality" id="fldNationality">
+              <option value="" selected disabled hidden>Επιλέξτε Υπηκοότητα</option>
+              <option value="greek">Ελληνική</option>
+              <option value="english">Αγγλική</option>
+              <option value="spanish">Ισπανική</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset>           
+              <legend>Προσωπικά στοιχεία</legend>
+              <div> <!-- Δεν βάζουμε value γτ το βάζει ο χρήστης -->
+                  <label for="fldFirstname">Όνομα</label>
+                  <input type="text" name="firstname" id="fldFirstname" placeholder="Συμπληρώστε Όνομα" minlength="4" maxlength="40" required >
+             </div>
+             <div>
+                 <label for="fldWorkExperience">Χρόνια προϋπηρεσίας</label>
+                 <input type="number" name="work-experience" id="fldWorkExperience" min="0" max="20">
+             </div>
+             <div>
+                 <label for="fldEmail">Email</label>
+                 <input type="email" name="email" id="fldEmail" placeholder="Συμπληρώστε email">
+             </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="fldMessage">Γράψτε το μήνυμα σας</label>
+            <textarea name="message" id="fldMessage" rows="5" cols="40"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Υποβολή">
+            <input type="reset" value="Καθάρισμα">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+* {  /* Universal Selector*/
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+ul {
+    /* Display */
+
+    display: flex; /* default horizondal aligment */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    /* Visual */
+
+    list-style: none;
+    
+}
+
+a {
+    /* Display */
+    display: inline-block;
+
+    /* Box Model */
+    padding: 5px 80px;
+    border: 1px solid black;
+
+    /* Typography */
+    font-weight: bold;
+    text-decoration: none;
+
+    /* Visual */
+    color: black;
+    cursor: pointer;
+
+}

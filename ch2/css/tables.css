@@ -1,0 +1,25 @@
+th, td, table  {
+border: 1px solid black;
+}
+
+
+table {
+    /* Box Model */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+
+    /* Typography */
+
+    text-align: center;
+
+    /* Decography */
+
+    border-collapse: collapse;
+}
+
+h1 {
+    text-align: center;
+}
